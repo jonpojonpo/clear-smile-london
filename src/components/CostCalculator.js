@@ -12,24 +12,11 @@ export default function CostCalculator() {
   })
 
   const calculateCost = () => {
-    const baseCosts = {
-      simple: 3500,
-      moderate: 4500,
-      complex: 6500
-    }
-    
-    const durationMultiplier = {
-      '6-12': 0.9,
-      '12-18': 1.0,
-      '18-24': 1.2,
-      '24+': 1.4
-    }
-    
-    const totalCost = baseCosts[complexity] * durationMultiplier[duration]
+    const totalCost = 3999 // Fixed price for all treatments
     const monthlyPayment = totalCost / 24 // 24 month plan
     
     return {
-      total: Math.round(totalCost),
+      total: totalCost,
       monthly: Math.round(monthlyPayment)
     }
   }
@@ -126,7 +113,7 @@ export default function CostCalculator() {
             }
           </div>
           <div className="mt-4 text-xs text-gray-500">
-            *Estimate only. Final cost determined at consultation
+            *Fixed price for all Invisalign treatments
           </div>
         </div>
 

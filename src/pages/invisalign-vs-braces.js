@@ -119,7 +119,7 @@ export default function InvisalignVsBraces() {
                 </tr>
                 <tr>
                   <td className="py-4 px-6 font-semibold text-gray-900">Cost in London</td>
-                  <td className="py-4 px-6 text-center">£3,500 - £6,500</td>
+                  <td className="py-4 px-6 text-center">£3,999 (fixed price)</td>
                   <td className="py-4 px-6 text-center">£2,500 - £5,000</td>
                 </tr>
                 <tr className="bg-gray-50">

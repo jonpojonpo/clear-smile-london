@@ -34,7 +34,7 @@ export default function Consultation() {
               
               <div className="space-y-8">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-dental-blue text-white rounded-full flex items-center justify-center text-lg font-bold">1</div>
+                  <div className="flex-shrink-0 w-8 h-8 bg-dental-blue text-white rounded-full flex items-center justify-center text-lg font-bold">1</div>
                   <div className="ml-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Comprehensive Examination</h3>
                     <p className="text-gray-600">
@@ -45,7 +45,7 @@ export default function Consultation() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-dental-blue text-white rounded-full flex items-center justify-center text-lg font-bold">2</div>
+                  <div className="flex-shrink-0 w-8 h-8 bg-dental-blue text-white rounded-full flex items-center justify-center text-lg font-bold">2</div>
                   <div className="ml-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Digital Imaging & Scans</h3>
                     <p className="text-gray-600">
@@ -56,7 +56,7 @@ export default function Consultation() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-dental-blue text-white rounded-full flex items-center justify-center text-lg font-bold">3</div>
+                  <div className="flex-shrink-0 w-8 h-8 bg-dental-blue text-white rounded-full flex items-center justify-center text-lg font-bold">3</div>
                   <div className="ml-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Treatment Options Discussion</h3>
                     <p className="text-gray-600">
@@ -67,7 +67,7 @@ export default function Consultation() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-dental-blue text-white rounded-full flex items-center justify-center text-lg font-bold">4</div>
+                  <div className="flex-shrink-0 w-8 h-8 bg-dental-blue text-white rounded-full flex items-center justify-center text-lg font-bold">4</div>
                   <div className="ml-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Personalized Treatment Plan</h3>
                     <p className="text-gray-600">
@@ -78,7 +78,7 @@ export default function Consultation() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-dental-blue text-white rounded-full flex items-center justify-center text-lg font-bold">5</div>
+                  <div className="flex-shrink-0 w-8 h-8 bg-dental-blue text-white rounded-full flex items-center justify-center text-lg font-bold">5</div>
                   <div className="ml-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Questions & Next Steps</h3>
                     <p className="text-gray-600">
@@ -164,7 +164,7 @@ export default function Consultation() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <div className="text-dental-blue mb-4">
-                <svg className="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-8 h-8 mx-auto" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
@@ -177,7 +177,7 @@ export default function Consultation() {
 
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <div className="text-dental-blue mb-4">
-                <svg className="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-8 h-8 mx-auto" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
                 </svg>
               </div>
@@ -190,7 +190,7 @@ export default function Consultation() {
 
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <div className="text-dental-blue mb-4">
-                <svg className="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-8 h-8 mx-auto" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"/>
                 </svg>
               </div>
