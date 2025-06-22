@@ -379,7 +379,6 @@
                         <!-- Hidden fields for tracking -->
                         <input type="hidden" name="_subject" value="New Lead from Clear Smile London - Homepage">
                         <input type="hidden" name="source_page" value="Homepage">
-                        <input type="hidden" name="_next" value="https://clear-smile-london.co.uk/thank-you.html">
                         <input type="hidden" name="_captcha" value="false">
                         
                         <div>
@@ -584,8 +583,8 @@
                     input.addEventListener('input', clearError);
                 });
                 
-                // Form submission
-                form.addEventListener('submit', function(e) {
+                // Form submission with CORS handling
+                form.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     
                     // Validate all fields
@@ -604,29 +603,27 @@
                         submitButton.textContent = 'Sending...';
                         submitButton.disabled = true;
                         
-                        // Submit form
-                        fetch(form.action, {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/x-www-form-urlencoded',
-                            },
-                            body: new FormData(form)
-                        })
-                        .then(response => {
-                            if (response.ok) {
-                                window.location.href = 'https://clear-smile-london.co.uk/thank-you.html';
-                            } else {
-                                throw new Error('Form submission failed');
-                            }
-                        })
-                        .catch(error => {
+                        try {
+                            await fetch(form.action, {
+                                method: 'POST',
+                                body: new FormData(form),
+                                mode: 'no-cors' // This bypasses CORS
+                            });
+                            
+                            // Success - redirect to our thank you page
+                            window.location.href = 'https://clear-smile-london.co.uk/thank-you.html';
+                            
+                        } catch (error) {
                             console.error('Error:', error);
+                            // Reset button state on error
                             submitButton.textContent = 'Error - Please Try Again';
+                            submitButton.classList.add('bg-red-600');
                             setTimeout(() => {
                                 submitButton.textContent = originalText;
                                 submitButton.disabled = false;
+                                submitButton.classList.remove('bg-red-600');
                             }, 3000);
-                        });
+                        }
                     }
                 });
             }
